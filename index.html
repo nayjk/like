@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Coffee & Tea</div>
+						<div class="layers__title">Nighthorm</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/index/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/index/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/index/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(img/index/dungeon.png);">
+			</article>
+
+			<article class="main-article" style="background-image: url(img/index/dungeon2.png);">
+
+        <a class="text_menu"> Menu </a>
+
+        <!-- категории напитков -->
+        <a class="text_menu_category_classic"> Classic coffee </a>
+        <a class="text_menu_category_branded"> Branded drinks </a>
+        <a class="text_menu_category_tea"> Tea </a>
+        <a class="text_menu_category_milkshake"> Milkshake </a>
+
+        <!-- классический кофе -->
+        <a class="text_menu_classic_americano"> Americano </a> 
+        <a class="text_menu_classic_cappuccino"> Cappuccino </a>
+        <a class="text_menu_classic_latte"> Latte </a>
+
+        <a class="text_menu_classic_200ml"> 200ml </a>
+        <a class="text_menu_classic_300ml"> 300ml </a>
+        <a class="text_menu_classic_400ml"> 400ml </a>
+
+        <a class="text_menu_classic_110"> 110 </a> <a class="text_menu_classic_135"> 135 </a> <a class="text_menu_classic_155"> 155 </a>
+        <a class="text_menu_classic_130"> 130 </a> <a class="text_menu_classic_150"> 150 </a> <a class="text_menu_classic_180"> 180 </a>
+        <a class="text_menu_classic_140"> 140 </a> <a class="text_menu_classic_160"> 160 </a> <a class="text_menu_classic_190"> 190 </a>
+        
+        <!-- фирменные напитки -->
+        <a class="text_menu_branded_nighthorm"> Nighthorm </a> 
+        <a class="text_menu_branded_matchalatte"> Matcha latte </a>
+        <a class="text_menu_branded_vanillaraf"> Vanilla raf </a>
+        <a class="text_menu_branded_cheeseraf"> Cheese raf </a>
+
+        <a class="text_menu_branded_200ml"> 200ml </a>
+        <a class="text_menu_branded_300ml"> 300ml </a>
+        <a class="text_menu_branded_400ml"> 400ml </a>
+
+        <a class="text_menu_branded_110"> 110 </a> <a class="text_menu_branded_130"> 130 </a> <a class="text_menu_branded_155"> 155 </a>
+        <a class="text_menu_branded_120"> 120 </a> <a class="text_menu_branded_145"> 145 </a> <a class="text_menu_branded_170"> 170 </a>
+        <a class="text_menu_branded_135"> 135 </a> <a class="text_menu_branded_150"> 150 </a> <a class="text_menu_branded_180"> 180 </a>
+        <a class="text_menu_branded_140"> 140 </a> <a class="text_menu_branded_160"> 160 </a> <a class="text_menu_branded_190"> 190 </a>
+
+        <!-- чай -->
+        <a class="text_menu_tea_greentea"> Green tea </a> 
+        <a class="text_menu_tea_whitetea"> White tea </a>
+        <a class="text_menu_tead_wheelingtea"> Wheeling tea </a>
+        <a class="text_menu_tea_blacktea"> Black tea </a>
+
+        <a class="text_menu_tea_200ml"> 200ml </a>
+        <a class="text_menu_tea_300ml"> 300ml </a>
+        <a class="text_menu_tea_400ml"> 400ml </a>
+
+        <a class="text_menu_tea_105"> 105 </a> <a class="text_menu_tea_130"> 130 </a> <a class="text_menu_tea_155"> 155 </a>
+        <a class="text_menu_tea_120"> 120 </a> <a class="text_menu_tea_150"> 150 </a> <a class="text_menu_tea_160"> 160 </a>
+        <a class="text_menu_tea_110"> 110 </a> <a class="text_menu_tea_140"> 140 </a> <a class="text_menu_tea_165"> 165 </a>
+        <a class="text_menu_tea_100"> 100 </a> <a class="text_menu_tea_135"> 135 </a> <a class="text_menu_tea_175"> 175 </a>
+
+        <!-- молочные коктейли -->
+        <a class="text_menu_milkshake_strawberry"> Strawberry </a> 
+        <a class="text_menu_milkshake_chocolate"> Chocolate </a>
+        <a class="text_menu_milkshake_snickers"> Snickers </a>
+        <a class="text_menu_milkshake_blackberry"> Blackberry </a>
+
+        <a class="text_menu_milkshake_400ml"> 400ml </a>
+
+        <a class="text_menu_milkshake_230"> 230 </a>
+        <a class="text_menu_milkshake_240"> 240 </a>
+        <a class="text_menu_milkshake_250"> 250 </a>
+        <a class="text_menu_milkshake_260"> 260 </a>
+
+        <!-- список статей -->
+        <a href="nighthormstory.html" class="layers__caption2">«Nighthorm story»</a>
+        <a href="index.html" class="layers__caption3">«Home page»</a>
+        <a href="https://vk.com/public169777064" class="nayjk">Nayjk' Qq'phtshdark'sleep (Darkwillow) x Kim Namjoon (RM)</a>
+			</article>
+		</div>
+	</div>
+</body>
+</html>
